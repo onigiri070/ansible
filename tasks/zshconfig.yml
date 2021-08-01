@@ -10,8 +10,8 @@
     mode: 0755
 
 - name: Execute zimfw-install.sh
-  shell: /tmp/zimfw-install.sh
+  shell: /home/onigiri/zimfw-install.sh
 
 - name: Remove zimfw-install.sh
-  file: path=/tmp/zimfw-install.sh state=absent
+  file: path=/home/onigiri/zimfw-install.sh state=absent
 
