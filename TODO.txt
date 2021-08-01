@@ -21,6 +21,14 @@ TODO:
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
   fish_add_path .cargo/bin
 
+- ncspot
+  cargo install ncspot
+
+- z and exa
+  Install with fisher
+  Set aliases for exa
+    Install Nerd Font (Hack)
+
 - dot-files
     alacritty
     neovim
