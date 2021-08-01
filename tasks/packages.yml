@@ -1,11 +1,17 @@
 - name: Install packages
-  pacman: name={{item}}
+  package: name={{item}}
   with_items:
     - htop
     - discord
     - zsh
-  when: ansible_facts['os_family']|lower == 'archlinux'
+      #when: ansible_facts['os_family']|lower == 'archlinux'
 
 - name: Install packages from scripts
-  command: "git clone https://aur.archlinux.org/ulauncher.git && cd ulauncher && makepkg -is"
-  when: ansible_facts['os_family']|lower == 'archlinux'
+  git: 
+    repo: https://aur.archlinux.org/ulauncher.git
+    dest: "/home/onigiri/Downloads/ulauncher"
+- name: Change directory
+  shell: cd /home/onigiri/Downloads/ulauncher/
+- name: Makepkg
+  command: makepkg -is
+    #when: ansible_facts['os_family']|lower == 'archlinux'
