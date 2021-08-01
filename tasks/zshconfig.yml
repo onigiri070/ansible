@@ -1,5 +1,5 @@
 - name: Change shell
-  command: "chsh -s /usr/bin/zsh"
+  command: "usermod -s /usr/bin/zsh onigiri"
 
 - name: Download zimfw installer
   get_url: 
