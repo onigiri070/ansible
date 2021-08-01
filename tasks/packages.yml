@@ -2,3 +2,5 @@
   pacman: name={{item}}
   with_items:
     - htop
+    - tmux
+  when: ansible_facts['os_family']|lower == 'archlinux'
