@@ -2,11 +2,14 @@
   command: "chsh -s /usr/bin/zsh"
 
 - name: Download zimfw installer
-  get_url: url=https://raw.githubusercontent.com/zimfw/install/master/install.zsh dest=/tmp/zimfw-install.sh
+  get_url: 
+    url: https://raw.githubusercontent.com/zimfw/install/master/install.zsh 
+    dest: /tmp/
+    mode: 0755
 
-- name: Execute zimfw-installer.sh
+- name: Execute zimfw-install.sh
   shell: /tmp/zimfw-install.sh
 
-- name: Remove zimfw-installer.sh
+- name: Remove zimfw-install.sh
   file: path=/tmp/zimfw-install.sh state=absent
 
