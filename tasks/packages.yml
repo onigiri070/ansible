@@ -3,13 +3,12 @@
   with_items:
     - htop
     - discord
-    - zsh
     - element-desktop
     - code
     - alacritty
     - neovim
     - fish
-    when: ansible_facts['os_family']|lower == 'archlinux'
+  #when: ansible_facts['os_family']|lower == 'archlinux'
 
 - name: Change shell
   user: 
