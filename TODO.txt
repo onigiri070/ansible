@@ -12,6 +12,15 @@ TODO:
         nvm install lts
         set --univeral nvm_default_version v14.7.4
 
+- Python/Poetry
+  curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+  Run in FiSH:
+    fish_add_path /home/onigiri/.local/bin 
+
+- Rust
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  fish_add_path .cargo/bin
+
 - dot-files
     alacritty
     neovim
