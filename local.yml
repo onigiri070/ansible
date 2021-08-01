@@ -6,7 +6,7 @@
         update_cache: yes
         upgrade: yes
         force: yes
-        changed_when: False
+        #changed_when: False
       when: ansible_facts['os_family']|lower == 'archlinux'
     
     - name: update deb repositories
@@ -14,9 +14,8 @@
         update_cache: yes
         upgrade: yes
         force: yes
-        changed_when: False
+        #changed_when: False
       when: ansible_facts['os_family']|lower == 'debian'
 
   tasks:
     - include: tasks/packages.yml
-    - include: tasks/xfce.yml  
