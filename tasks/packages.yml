@@ -5,3 +5,7 @@
     - discord
     - zsh
   when: ansible_facts['os_family']|lower == 'archlinux'
+
+- name: Install packages from scripts
+  command: "git clone https://aur.archlinux.org/ulauncher.git && cd ulauncher && makepkg -is"
+  when: ansible_facts['os_family']|lower == 'archlinux'
