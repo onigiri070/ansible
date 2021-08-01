@@ -7,4 +7,11 @@
     - element-desktop
     - code
     - alacritty
-      #when: ansible_facts['os_family']|lower == 'archlinux'
+    - neovim
+    - fish
+    when: ansible_facts['os_family']|lower == 'archlinux'
+
+- name: Change shell
+  user: 
+    name: onigiri
+    shell: /usr/bin/fish
