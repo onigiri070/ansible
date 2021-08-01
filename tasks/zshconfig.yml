@@ -1,5 +1,5 @@
 - name: Download zimfw installer
-  get_url: https://raw.githubusercontent.com/zimfw/install/master/install.zsh dest=/tmp/zimfw-install.sh
+  get_url: url=https://raw.githubusercontent.com/zimfw/install/master/install.zsh dest=/tmp/zimfw-install.sh
 
 - name: Execute zimfw-installer.sh
   shell: /tmp/zimfw-installer.sh
