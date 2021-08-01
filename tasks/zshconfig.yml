@@ -5,8 +5,8 @@
   get_url: url=https://raw.githubusercontent.com/zimfw/install/master/install.zsh dest=/tmp/zimfw-install.sh
 
 - name: Execute zimfw-installer.sh
-  shell: /tmp/zimfw-installer.sh
+  shell: /tmp/zimfw-install.sh
 
 - name: Remove zimfw-installer.sh
-  file: path=/tmp/zimfw-installer.sh state=absent
+  file: path=/tmp/zimfw-install.sh state=absent
 
