@@ -1,3 +1,6 @@
+- name: Change shell
+  command: "chsh -s /usr/bin/zsh"
+
 - name: Download zimfw installer
   get_url: url=https://raw.githubusercontent.com/zimfw/install/master/install.zsh dest=/tmp/zimfw-install.sh
 
