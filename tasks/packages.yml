@@ -4,14 +4,7 @@
     - htop
     - discord
     - zsh
+    - element-desktop
+    - code
+    - alacritty
       #when: ansible_facts['os_family']|lower == 'archlinux'
-
-- name: Install packages from scripts
-  git: 
-    repo: https://aur.archlinux.org/ulauncher.git
-    dest: "/home/onigiri/Downloads/ulauncher"
-- name: Change directory
-  shell: cd /home/onigiri/Downloads/ulauncher/
-- name: Makepkg
-  command: makepkg -is
-    #when: ansible_facts['os_family']|lower == 'archlinux'
