@@ -19,3 +19,4 @@
 
   tasks:
     - include: tasks/packages.yml
+    - include: tasks/zshconfig/yml
