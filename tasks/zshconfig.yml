@@ -6,12 +6,12 @@
 - name: Download zimfw installer
   get_url: 
     url: https://raw.githubusercontent.com/zimfw/install/master/install.zsh 
-    dest: /home/onigiri/Downloads/zimfw-install.sh
+    dest: /home/onigiri/Downloads/zimfw-install.zsh
     mode: 0755
 
 - name: Execute zimfw-install.sh
-  shell: /home/onigiri/Downloads/zimfw-install.sh
+  command: "zsh /home/onigiri/Downloads/zimfw-install.zsh"
 
 - name: Remove zimfw-install.sh
-  file: path=/home/onigiri/Downloads/zimfw-install.sh state=absent
+  file: path=/home/onigiri/Downloads/zimfw-install.zsh state=absent
 
