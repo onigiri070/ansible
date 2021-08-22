@@ -1,16 +1,13 @@
 TODO:
 
-- Install vim-plug
-  sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
-    Once NeoVim is opened, run :PlugInstall, then restart.
+- Install Neovim >= 5.0
+  Install LunarVim
 
 - Fish 
   Fisher - https://github.com/jorgebucaran/fisher
     NVM - https://github.com/jorgebucaran/nvm.fish
-        nvm install lts
-        set --univeral nvm_default_version v14.7.4
+        nvm install latest
+        set --universal nvm_default_version {versionNo}
 
 - Python/Poetry
   curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
@@ -31,5 +28,7 @@ TODO:
 
 - dot-files
     alacritty
-    neovim
+    lvim
+    starship prompt
+    
 
